@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Biyu Bucin 2024 Purpose</title>
+</head>
+
+<body>
+  <audio controls autoplay hidden controls loop>
+    <source src="assets/Lany mp3.mp3" type="audio/mp3">
+  </audio>
+
+  <header class="header" id="home">
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/b2round.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">First</a></li>
+        <li><a href="#about">Second</a></li>
+        <li class="nav__logo">
+          <a href="#">
+            <img src="assets/b2round.png" alt="logo" />
+          </a>
+        </li>
+        <li><a href="#service">Third</a></li>
+        <li><a href="#client">Fourth</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="w3-content w3-section" style="max-width:1000px">
+
+    <img class="mySlides w3-animate-fading" src="assets/rumah1.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="assets/rumah2.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="assets/rumah3.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="assets/rumah1.jpg" style="width:100%">
+
+    <h2 class="section__description">
+      Lagi Cari Hunian Idaman ? Boleh Discroll dahulu untuk detail nya
+    </h2>
+    <br></br>
+    <h3 class="section__description">
+      “A better life, a better world”
+    </h3>
+
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+  </script>
+  <br> </br>
+  <br> </br>
+  <div class="section__container about__container" id="about">
+    <h2 class="section__header">Ada beberapa pertanyaan dari aku baca pelan - pelan ya</h2>
+    <p class="section__description">
+      Pertanyaan yang pertama, Siapa nabi pertama ?
+    </p>
+    <p class="section__description">
+      Pertanyaan yang kedua, Apa makanan kesukaan Prabowo ?
+    </p>
+    <p class="section__description">
+      Pertanyaan yang ketiga, Kenapa orang cikeas jarang mandi ?
+    </p>
+    <p class="section__description">
+      Hehe gajelas ya, tapi kamu gausah pusing jawab ya, soalnya kamu di ciptain dibumi bukan untuk pusingin hal yang ga
+      penting!
+    </p>
+    <img src="assets/b2rounde.png" alt="logo" />
+  </div>
+
+  <section class="service" id="service">
+    <div class="section__container service__container">
+      <h2 class="section__header"></h2>
+      <p class="section__description">
+        Hai Ra, gimana hari - hari mu ?
+      </p>
+      <p class="section__description">
+        Banyak nyebelinnya atau nyenengin hayo ?
+      </p>
+      <p class="section__description">
+        Tapi jangan khawatir kamu ngga sendirian kok, kita coba lewatin sama - sama momentnya yaa
+      </p>
+      <br></br>
+      <br></br>
+      <div class="ratio ratio-16x9" style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HEAn4FqXFY4?si=gwa_y8Gv6v8aXvGV"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="">
+        <p class="section__description">Oh ya aku tau loh lagu kesukaan kamu, Lany kan</p>
+      </div>
+      <br></br>
+      <div class="ratio ratio-16x9" style="text-align: center;">
+        <video autoplay muted width="560" height="315" src="assets/byy1.mp4"></video>
+      </div>
+      <div class="">
+        <p class="section__description">Ngga kerasa ya udah berbulan - bulan kita kenal</p>
+      </div>
+      <br></br>
+      <div class="ratio ratio-16x9" style="text-align: center;">
+        <video autoplay muted width="560" height="315" src="assets/byy2.mp4"></video>
+      </div>
+      <div class="">
+        <p class="section__description">Jangan diinget ya kita kenal dimana</p>
+      </div>
+      <br></br>
+      <div class="ratio ratio-16x9" style="text-align: center;">
+        <video autoplay muted width="560" height="315" src="assets/byy3.mp4"></video>
+      </div>
+      <div class="">
+        <p class="section__description">Yang pasti setia moment ketemu sama itu adalah moment terbaik buat aku</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container instagram__container">
+    <div class="instagram__flex">
+      <img src="assets/by-1.jpg.jpg" alt="instagram" />
+      <img src="assets/by-2.jpg.jpg" alt="instagram" />
+      <img src="assets/by-3.jpg.jpg" alt="instagram" />
+      <img src="assets/by-7.jpg.jpg" alt="instagram" />
+      <img src="assets/by-8.jpg.jpg" alt="instagram" />
+      <img src="assets/by-6.jpg.jpg" alt="instagram" />
+      <img src="assets/by-7.jpg.jpg" alt="instagram" />
+      <img src="assets/by-8.jpg.jpg" alt="instagram" />
+    </div>
+  </section>
+
+  <section class="section__container client__container" id="client">
+    <h2 class="section__header"></h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/client-1.jpg" alt="client" />
+
+            <p class="animasi-teks">
+              Aku bukan cowok yang pandai basa basi, aku cuma mau kamu tau
+            </p>
+            <p class="animasi-tekss">
+              Kalo dalam islam pacaran itu dilarang aku ga berani ngelanggarnya nanti dimarahin Allah</p>
+            <p class="animasi-tekss">Jadi kayanya aku coba dijalan Allah aja deh buat serius sama kamu</p>
+            <p class="animasi-teksss">
+              So di tempat yang sederhana ini aku punya niat baik mau lamar kamu
+            </p>
+            <p class="animasi-tekssss">
+              Kalau kamu nerima di meja depan mata kamu coba liat deh</p>
+            <p class="animasi-tekssss">ada kotak kecil sederhana buat jadi tanda
+              keseriusan aku</p>
+            <h3 class="lamar">Ты выйдешь за меня Ra ?</h3>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section__container">
+
+  </section>
+
+
+  <footer id="contact">
+    <div class="footer__bar">
+      Copyright © 2024 HabibHerdika.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
